@@ -8,13 +8,21 @@
 
 * **CRUD Produk**
 
-  * Tambah produk (nama, deskripsi, harga, stok)
-  * Lihat daftar produk
+  * Tambah produk (nama, deskripsi, harga, stok, kategori)
+  * Lihat daftar produk beserta kategori
   * Edit dan hapus produk
+
+* **CRUD Kategori**
+
+  * Tambah kategori (nama kategori)
+  * Lihat daftar kategori
+  * Edit dan hapus kategori
+
 * **Validasi Input**
 
   * Semua field wajib diisi
   * Harga dan stok hanya angka positif
+
 * **RESTful API**
 
   * `GET /products`
@@ -22,6 +30,11 @@
   * `POST /products`
   * `PUT /products/{id}` / `PATCH /products/{id}`
   * `DELETE /products/{id}`
+  * `GET /categories`
+  * `GET /categories/{id}`
+  * `POST /categories`
+  * `PUT /categories/{id}`
+  * `DELETE /categories/{id}`
 
 ---
 
@@ -109,19 +122,24 @@ npm run dev   # Compile asset
 php artisan serve
 ```
 
-Akses aplikasi di `http://localhost:8000/`.
+Akses aplikasi di `http://localhost:8000`.
 
 ---
 
 ## 📡 API Endpoints
 
-| Method | Endpoint         | Deskripsi            |
-| ------ | ---------------- | -------------------- |
-| GET    | `/products`      | Daftar semua produk  |
-| GET    | `/products/{id}` | Detail produk per ID |
-| POST   | `/products`      | Tambah produk baru   |
-| PUT    | `/products/{id}` | Update data produk   |
-| PATCH  | `/products/{id}` | Update sebagian data |
-| DELETE | `/products/{id}` | Hapus produk         |
+| Method | Endpoint           | Deskripsi                   |
+| ------ | ------------------ | --------------------------- |
+| GET    | `/products`        | Daftar semua produk         |
+| GET    | `/products/{id}`   | Detail produk per ID        |
+| POST   | `/products`        | Tambah produk baru          |
+| PUT    | `/products/{id}`   | Update data produk          |
+| PATCH  | `/products/{id}`   | Update sebagian data produk |
+| DELETE | `/products/{id}`   | Hapus produk                |
+| GET    | `/categories`      | Daftar semua kategori       |
+| GET    | `/categories/{id}` | Detail kategori per ID      |
+| POST   | `/categories`      | Tambah kategori baru        |
+| PUT    | `/categories/{id}` | Update data kategori        |
+| DELETE | `/categories/{id}` | Hapus kategori              |
 
 ---
