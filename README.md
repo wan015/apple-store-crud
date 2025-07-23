@@ -1,9 +1,6 @@
 # Apple Store CRUD App
 
-![License](https://img.shields.io/badge/License-MIT-blue.svg) ![Laravel Version](https://img.shields.io/badge/Laravel-10.x-orange.svg)
-
 > **Apple Store CRUD App** adalah aplikasi **Laravel** sederhana untuk melakukan operasi **CRUD** (Create, Read, Update, Delete) pada data produk “Apple Store”.
-
 
 ---
 
